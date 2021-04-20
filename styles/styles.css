@@ -8,6 +8,11 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
+.strike {
+  text-decoration: line-through;
+  position: relative;
+}
+
 .nav {
   position: absolute;
   background-color: transparent;

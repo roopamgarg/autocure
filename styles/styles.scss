@@ -6,6 +6,24 @@ body {
 * {
   font-family: "Montserrat", sans-serif;
 }
+.strike{
+  text-decoration: line-through;
+  position: relative;
+  // &::after{
+  //   content: "Rs 0 for initial customers";
+  //   position: absolute;
+  //   text-align: center;
+  //   font-size: 1.2rem;
+  //   margin-left: 1rem;
+  //   top:-20px;
+  //   left: -150px;
+  //   height: 1.5rem;
+  //   line-height: 1.5rem;
+  //   width: 20rem;
+  //   color: red;
+  //   background: white;
+  // }
+}
 .nav {
   //width: 100vw;
   position: absolute;
