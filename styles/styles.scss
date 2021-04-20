@@ -1,0 +1,223 @@
+body {
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+* {
+  font-family: "Montserrat", sans-serif;
+}
+.nav {
+  //width: 100vw;
+  position: absolute;
+  background-color: transparent;
+  top: 0;
+  left: 0;
+  padding: 1rem 5%;
+  @media (max-width: 1200px) {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+  }
+  &__logo {
+    height: 4rem;
+  }
+}
+.header {
+  display: flex;
+
+  background-color: linear-gradient(119deg, #f9f8f8 0%, white 100%);
+  height: 100vh;
+  overflow: hidden;
+
+  @media (max-width: 1200px) {
+    flex-direction: column;
+    min-height: 100vh;
+    height: 100%;
+  }
+  &__image {
+    height: 100%;
+    @media (max-width: 1200px) {
+      width: 100vw;
+    }
+  }
+  &__left {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 9rem 0 5rem 0;
+  }
+  &__right {
+    flex: 1;
+    position: relative;
+
+    &__container {
+      background-color: #313437;
+      //height: 100vh;
+      // border-radius: 8%;
+      // transform: rotate(-20deg) scale(1.2) translate(5rem,5rem);
+      position: absolute;
+      overflow: hidden;
+      top: -2%;
+      right: -40%;
+      bottom: -40%;
+      left: -2%;
+      margin-right: 0;
+      transform: rotate(-18.5deg);
+      border-radius: 8%;
+      border: 1px solid transparent;
+
+      @media (max-width: 1200px) {
+        // position: relative;
+        transform: rotate(0deg);
+        min-height: 100vh;
+        border-radius: 0;
+      }
+    }
+  }
+  &__form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -40%);
+    @media (max-width: 1200px) {
+      position: initial;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 2rem 0;
+      transform: translate(0, 0);
+    }
+  }
+}
+
+.map {
+  background: url("../assets/images/map.png");
+  opacity: 0.4;
+  height: 100%;
+  transform: rotate(18.5deg);
+  height: 100vh;
+  // width: 100vw;
+
+  @media (max-width: 1200px) {
+    transform: rotate(0deg);
+    //  height: 100vh;
+  }
+}
+#mc_embed_signup .button {
+    background-color: #0d6efd;
+    &:hover{
+        background-color: #0b5ed7;
+    }
+}
+.form {
+  color: #ffffff;
+  width: 30rem;
+  // background: red;
+  // line-height: 1.2rem;
+  @media (max-width: 1200px) {
+    width: 100%;
+    padding: 10%;
+  }
+  &__heading {
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 0;
+  }
+  &__phone {
+    font-size: 2rem;
+    font-weight: 300;
+    &__icon {
+      opacity: 0.6;
+      margin: 0 1rem 0 0;
+    }
+    // &:before {
+    //     font-family: 'Material Icons';
+    //     content: "\f4e6";
+    // }
+  }
+  &__description {
+    font-size: 1.4rem;
+    font-weight: 300;
+  }
+}
+
+.sections-services {
+  //min-height: 100vh;
+  padding: 1rem 10%;
+}
+
+.services {
+  &__heading {
+    text-align: center;
+    margin: 3rem 0;
+    font-weight: 600;
+  }
+  &__cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+
+    grid-gap: 1rem;
+  }
+}
+.prizing{
+    &__cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+        justify-content: center;
+        grid-gap: 1rem;
+      }
+}
+.service-card {
+  background-color: #f1f1f1;
+  padding: 3rem;
+
+  //height: 15rem;
+  &__bar {
+    height: 0.2rem;
+    width: 3rem;
+    background: #000;
+    margin: 0.5rem 0 1rem 0;
+  }
+  .prizing__cards &{
+      padding: 2rem 1rem;
+  }
+  &:nth-child(even) &__bar {
+    background: #fff !important;
+  }
+  &:nth-child(even) {
+    background-color: #0d6efd;
+    color: #fff;
+  }
+  &__heading {
+    margin: 0;
+  }
+}
+
+#mc_embed_signup{
+    background: transparent !important;
+}
+
+.section-partners {
+  padding: 1rem 10%;
+}
+.partners {
+  text-align: center;
+  &__heading {
+    text-align: center;
+    margin: 2rem 0;
+    font-weight: 600;
+  }
+}
+.partner-logo {
+  height: 4rem;
+  margin: 1rem;
+}
+
+.safety-icon{
+    font-size: 2rem;
+    line-height: 0;
+    position: relative;
+    top:-10px;
+}
